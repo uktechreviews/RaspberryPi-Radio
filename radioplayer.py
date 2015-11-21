@@ -12,11 +12,11 @@ pygame.init()
 
 #define function that checks for mouse location
 def on_click():
-	click_pos = (pygame.mouse.get_pos() [0], pygame.mouse.get_pos() [1])
-	#check to see if exit has been pressed
-	if 270 <= click_pos[0] <= 320 and 10 <= click_pos[1] <=50:
-		print "You pressed exit" 
-		button(0)
+        click_pos = (pygame.mouse.get_pos() [0], pygame.mouse.get_pos() [1])
+        #check to see if exit has been pressed
+        if 270 <= click_pos[0] <= 320 and 10 <= click_pos[1] <=50:
+                print "You pressed exit" 
+                button(0)
 	#now check to see if play was pressed
 	if 20 <= click_pos[0] <= 70 and 80 <= click_pos[1] <=130:
                 print "You pressed button play"
