@@ -136,7 +136,8 @@ def refresh_menu_screen():
         pygame.draw.rect(screen, blue, (0,0,320,240),3)
 	##### display the station name and split it into 2 parts :
         station = subprocess.check_output("mpc current", shell=True )
-        lines=station.split(":")
+        print(station)
+        lines=station.split(b":")
         length = len(lines)
         if length==1:
             line1 = lines[0]
